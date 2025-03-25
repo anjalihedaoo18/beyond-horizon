@@ -376,7 +376,7 @@ footer {
     }
 
     .explore {
-        height: 45vh;
+        height: 50vh;
     }
 
     .nav-links {
@@ -503,5 +503,8 @@ footer {
     }
     .sectioncontent{
         padding: 0 21px;
+    }
+    .explore-content{
+        margin: 8px;
     }
 }
