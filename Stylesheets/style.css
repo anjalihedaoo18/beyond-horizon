@@ -490,3 +490,18 @@ footer {
         font-size: 14px;
     }
 }
+@media screen and (max-width: 500px) {
+    .image-grid img{
+        height: 8.5rem;
+    }
+    .grid1,
+    .grid2 {
+        max-width: 322px;
+    }
+    .tourcontent {
+        padding:0 20px 15px 20px;
+    }
+    .sectioncontent{
+        padding: 0 20px;
+    }
+}
