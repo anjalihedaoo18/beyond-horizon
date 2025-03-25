@@ -492,11 +492,11 @@ footer {
 }
 @media screen and (max-width: 502px) {
     .image-grid img{
-        height: 8.4rem;
+        height: 8.5rem;
     }
     .grid1,
     .grid2 {
-        max-width: 303px;
+        max-width: 302px;
     }
     .tourcontent {
         padding:0 21px 15px 21px;
