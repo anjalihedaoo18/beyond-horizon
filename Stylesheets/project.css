@@ -1,0 +1,302 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+header {
+  width: 100%;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #ff0066;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  display: block;
+}
+
+.nav-links a:hover {
+  color: #ff0066;
+}
+
+.btn {
+  padding: 12px 30px;
+  background: #ff0066;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #cc0052;
+}
+
+#button {
+  margin-left: 8.7rem;
+}
+
+/* Responsive Navbar */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Background Image with Dim Effect */
+.hero::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../Images/project.jpg') no-repeat center center/cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+
+.hero h1 {
+  font-size: 50px;
+  margin: 10px 0;
+}
+
+.horRule span {
+  width: 28%;
+  color: #ff0066;
+  margin: 0 0 2rem 5px;
+  display: flex;
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+/* Section title styling */
+.projects {
+  padding: 5rem 5rem;
+  background: #f1f1f4;
+}
+
+.container {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  margin: 0 0 30px 7rem;
+}
+
+.section-title h5 {
+  color: #ff0066;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.section-title h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.section-title p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Carousel container */
+.carousel {
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Image wrapper */
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Image styling */
+.carousel-images img {
+  border-radius: 15px;
+  object-fit: cover;
+  height: 240px;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  /* Black footer background */
+  color: #ffffff;
+  /* White text color */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  min-height: 100px;
+}
+
+.footer-content p {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width:1370px) {
+  .section-title{
+    margin: 0 0 30px 4rem;
+  }
+}
+@media screen and (max-width:1080px) {
+  #button {
+    margin-left: 3rem;
+  }
+  .carousel-images img {
+    height: 178px;
+}
+  .section-title{
+    margin: 0 0 30px 1rem;
+  }
+}
+
+@media screen and (max-width:972px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #f1f1f4;
+    z-index: 1000;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li a {
+    color: black;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #cccbcb;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  #button {
+    width: fit-content;
+    z-index: 1000;
+    margin: 10px auto;
+  }
+  .section-title{
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 40vh;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .logo {
+    font-size: 19px;
+  }
+
+  .horRule span {
+    margin: 1rem auto;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+  .projects{
+    padding: 4rem 3rem;
+  }
+  .section-title h2{
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 550px){
+  .projects{
+    padding: 2rem 2rem;
+  }
+  .container{
+    margin-bottom: 3rem;
+  }
+}

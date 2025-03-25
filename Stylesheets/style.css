@@ -1,0 +1,492 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+header {
+    width: 100%;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff0066;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    display: block;
+}
+
+.nav-links a:hover {
+    color: #ff0066;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: #ff0066;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #cc0052;
+}
+
+#button {
+    margin-left: 8.7rem;
+}
+
+/* Responsive Navbar */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Background Image with Dim Effect */
+.hero::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../Images/Homepage.jpg') no-repeat center center/cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.hero-content h4 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.hero-content .btn {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.horRule span {
+    width: 28%;
+    color: #ff0066;
+    margin: 1rem auto;
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* Events Section */
+.quote {
+    margin: 10px;
+}
+
+.quote h3 {
+    color: rgb(87, 91, 91);
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: 15px;
+}
+
+.quote span {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Centering Section Title */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 3em 0px 10px 0px;
+    /*margin:TRBL*/
+}
+
+.events {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f1f1f4;
+}
+
+/* Event Container */
+.event-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+/* Individual Event Box */
+.eventcard {
+    background: #f1f1f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    max-width: 400px;
+}
+
+/* Event Hover Effect */
+.eventcard:hover {
+    transform: scale(1.05);
+}
+
+/* Event Image */
+.eventcard img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Event Title */
+.eventcard h3 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+/* Event Description */
+.eventcard p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background: #ff0066;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #cc0052;
+}
+
+/* Explore Section */
+.explore {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f4;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* Background Image with Dim Effect */
+.explore::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../Images/explorepage.jpg') no-repeat center center/cover;
+    filter: brightness(50%);
+    /* Dimming effect */
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+.e-title {
+    text-align: center;
+    font-size: 36px;
+}
+
+.explore-content {
+    padding-left: 50%;
+    margin: 1rem;
+}
+
+.sectioncontent {
+    padding: 0 1.7rem;
+    line-height: 27px;
+}
+
+.button {
+    padding: 12px 30px;
+    background: #ff0066;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: flex;
+    margin: 16px 0px;
+    width: fit-content;
+}
+
+.button:hover {
+    background: #cc0052;
+}
+
+
+.toursection {
+    background-color: #f1f1f4;
+    display: flex;
+    padding: 4em 7em;
+    gap: 9%;
+}
+
+.tour h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    /*margin:TRBL*/
+}
+
+.tourcontent {
+    line-height: 27px;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.image-grid img {
+    height: 16rem;
+}
+
+footer {
+    background-color: #111;
+    /* Black footer background */
+    color: #ffffff;
+    /* White text color */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    min-height: 100px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+/* Responsive-CSS */
+@media screen and (max-width:1060px) {
+    #button {
+        margin-left: 2.5rem;
+    }
+    .grid1,.grid2 {
+        gap: 8px;
+    }
+    .image-grid img {
+        height: 12rem;
+    }
+
+    .section-title,.e-title,.tour h1  {
+        font-size: 28px;
+    }
+
+    .quote h3 {
+        font-size: 1rem;
+        margin: 5px;
+    }
+
+    .quote span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .explore {
+        height: 45vh;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #f1f1f4;
+        z-index: 1000;
+        align-items: flex-start;
+    }
+
+    .nav-links a {
+        color: black;
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        border-bottom:1px solid #cccbcb;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    #button {
+        width: fit-content;
+        z-index: 1000;
+        margin: 10px auto;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .toursection {
+        padding: 35px 35px;
+        gap: 9%;
+        flex-direction: column;
+    }
+
+    .grid1,
+    .grid2 {
+        max-width: 425px;
+    }
+
+    .tourcontent {
+        margin: 0px;
+        padding:0 45px 15px 45px;
+    }
+    .eventcard{
+        max-width: 320px;
+    }
+    .eventcard img{
+        height: 175px;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    .hero {
+        height: 40vh;
+    }
+    .hero-content .btn{
+        margin-top: 10px;
+    }
+    .logo{
+        font-size: 19px;
+    }
+    .explore-content {
+        padding-left: 0;
+    }
+    .hero-content h1 {
+        font-size: 35px;
+    }
+    .hero-content h4{
+        font-size: 18px;
+    }
+    .grid1,
+    .grid2 {
+        max-width: 363px;
+    }
+    .image-grid img{
+        height: 10.2rem;
+    }
+    .btn,.button{
+        padding: 8px 20px;
+    }
+    .horRule span{
+        margin: 8px auto;
+    }
+    .sectioncontent{
+        padding: 0 2rem;
+    }
+    .tourcontent {
+        padding:0 25px 15px 25px;
+    }
+    .events{
+        padding: 40px 20px;
+    }
+    .section-title{
+        margin: 2em 0 10px 0;
+    }
+    footer{
+        font-size: 14px;
+    }
+}

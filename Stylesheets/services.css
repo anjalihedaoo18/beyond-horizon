@@ -1,0 +1,360 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+header {
+    width: 100%;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff0066;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    display: block;
+}
+
+.nav-links a:hover {
+    color: #ff0066;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: #ff0066;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #cc0052;
+}
+
+#button {
+    margin-left: 8.7rem;
+}
+
+/* Responsive Navbar */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Background Image with Dim Effect */
+.hero::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../Images/services.jpg') no-repeat center center/cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+
+.hero h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.horRule span {
+    width: 28%;
+    color: #ff0066;
+    margin: 1rem auto;
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.service-container{
+    background: #f1f1f4;
+}
+/* Services Intro */
+.services-intro {
+    text-align: center;
+    padding: 50px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    /* margin: 0 auto; */
+}
+
+.services-intro p {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+    padding: 0 12em;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+    gap: 40px;
+}
+
+.service-box {
+    width: 35%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 10px 10px 0px rgb(219, 219, 221);
+}
+
+.service-box h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Why Outdoor Adventure Section */
+.why-choose-section {
+    background: #f1f1f4;
+    padding: 60px 100px;
+}
+
+.why-choose-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.why-box {
+    width: 45%;
+    text-align: left;
+}
+
+.why-box h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background-color: #ff3366;
+    margin: 5px 0 15px;
+}
+
+.why-box p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 14px;
+}
+
+.why-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-box ul li {
+    font-size: 16px;
+    color: #333;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.why-box ul li::before {
+    content: "–";
+    color: #ff3366;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+footer {
+    background-color: #111; /* Black footer background */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    min-height: 100px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+@media screen and (max-width:1250px) {
+    .why-choose-container{
+        gap: 80px;
+        max-width: 750px;
+    }
+    .services-intro p {
+        padding: 0 10em;
+    }
+}
+@media screen and (max-width:1060px) {
+    #button {
+        margin-left: 3rem;
+    }
+    .services-intro p {
+        padding: 0 5em;
+    }
+}
+@media screen and (max-width:972px) {
+    .hero{
+        height: 60vh;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #f1f1f4;
+        z-index: 1000;
+        align-items: flex-start;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li a {
+        color: black;
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        border-bottom:1px solid #cccbcb;
+        margin: 0;
+        padding: 10px 0;
+    }
+    #button {
+        width: fit-content;
+        z-index: 1000;
+        margin: 10px auto;
+    }
+    .why-choose-container{
+        flex-direction: column;
+    }
+    .why-box{
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width:750px) {
+    .hero{
+        height: 40vh;
+    }
+    .hero h1{
+        font-size: 35px;
+    }
+    .logo{
+        font-size: 19px;
+    }
+    .services-intro{
+        font-size: 19px;
+    }
+    .why-choose-section{
+        padding: 60px 75px;
+    }
+    .services{
+        gap: 20px;
+        flex-direction: column;
+        margin: 0;
+    }
+    .services-intro p {
+        padding: 0;
+    }
+    .service-box{
+        width: 80%;
+    }
+}
+@media screen and (max-width:570px){
+    .service-box h3{
+        font-size: 17px;
+    }
+    .service-box p{
+        font-size: 15px;
+    }
+    .why-choose-section{
+        padding: 45px 32px;
+    }
+    .services-intro{
+        font-size: 17px;
+    }
+    footer{
+        font-size: 14px;
+    }
+}
